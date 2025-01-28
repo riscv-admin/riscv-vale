@@ -8,14 +8,22 @@ message: "Verify the word '%s'. It is not in the American English spelling dicti
 # Spelling rule applies to individual words
 # There is no need to add plural forms (s?) to the regex
 filters:
-  - microarchitecture
-  - microarchitectural
-  - IEEE
-  - RISC
-  - RISC-V
-  - IEC
-  - virtualized
-  - virtualization
-  - virtualize
-  - SOAR
-  - SPUR
+  - "[mM]icroarchitecture"
+  - "[mM]icroarchitectural"
+  - "IEEE"
+  - "RISC"
+  - "RISC-V"
+  - "IEC"
+  - "[vV]irtualize"
+  - "virtualization"
+  - "SOAR"
+  - "SPUR"
+  - "[mM]icrocontroller"
+  - "FPGA"
+  - "[pP]seudocode"
+  - "[hH]alfword"
+  - "[dD]oubleword"
+  - "[bB]itwise"
+  - "[bB]oolean"
+  - "[sS]box"
+  - "[eE]ndian"
