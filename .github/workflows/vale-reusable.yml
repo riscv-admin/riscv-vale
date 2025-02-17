@@ -11,8 +11,8 @@ jobs:
           run: sudo apt-get install -y asciidoctor
         - uses: actions/checkout@v4
         - uses: errata-ai/vale-action@v2.1.1
-          with:
-            vale_flags: "--config=workflows/.vale.ini"
+#          with:
+#            vale_flags: "--config=workflows/.vale.ini"
 
 # For reStructuredText users:
 #      - name: Install docutils
