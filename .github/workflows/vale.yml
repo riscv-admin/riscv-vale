@@ -1,6 +1,6 @@
 name: Vale Linting
 #on: [workflow_call]
-on: [push]
+#on: [push]
 
 jobs:
   vale:
