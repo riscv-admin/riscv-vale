@@ -22,7 +22,7 @@
 
           - name: Create release
             run: |
-              cd ..
+              cd ../../
               echo $GITHUB_RUN_NUMBER > version.txt
               zip -r RISCV-Vale.zip .vale
               gh release create v$GITHUB_RUN_NUMBER 'RISCV-Vale.zip'
