@@ -22,9 +22,9 @@
 
           - name: Create release
             run: |
-              cd .vale/
+              cd .vale/styles/
               echo $GITHUB_RUN_NUMBER > version.txt
-              zip -r RISCV-Vale.zip *
+              zip -r RISCV-Vale.zip config riscv .vale.ini
               gh release create v$GITHUB_RUN_NUMBER 'RISCV-Vale.zip'
             env:
               GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
