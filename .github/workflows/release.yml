@@ -25,6 +25,6 @@
               cd styles
               echo $GITHUB_RUN_NUMBER > version.txt
               zip -r RISCVVale.zip *
-              gh release create v$GITHUB_RUN_NUMBER 'RISCV-Vale.zip'
+              gh release create v$GITHUB_RUN_NUMBER 'RISCVVale.zip'
             env:
               GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
