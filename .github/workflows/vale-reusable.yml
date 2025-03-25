@@ -11,8 +11,14 @@ jobs:
           run: sudo apt-get install -y asciidoctor
         - uses: actions/checkout@v4
         - uses: errata-ai/vale-action@v2.1.1
-          #with:
-          #  vale_flags: "--config=.vale.ini"
+          with:
+            filter_mode: diff_context
+            vale_flags: "--no-exit --minAlertLevel-error --glob=*.adoc"
+            reporter: github-pr-review
+            fail_on_error: true
+          env:
+            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            REVIEWDOG_GITHUB_API_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 # For reStructuredText users:
 #      - name: Install docutils
