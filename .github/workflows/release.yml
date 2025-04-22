@@ -22,7 +22,7 @@
 
           - name: Create release
             run: |
-              cd styles
+              cd .github/styles
               echo $GITHUB_RUN_NUMBER > version.txt
               zip -r config.zip config
               zip -r riscv.zip riscv
