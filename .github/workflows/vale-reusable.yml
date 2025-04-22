@@ -14,7 +14,7 @@ jobs:
           with:
             filter_mode: diff_context
             vale_flags: "--no-exit --minAlertLevel=suggestion --glob=*.adoc"
-            reporter: github-pr-review
+            reporter: github-check
             fail_on_error: true
           env:
             GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
