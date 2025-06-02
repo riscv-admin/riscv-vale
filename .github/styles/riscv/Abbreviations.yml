@@ -1,0 +1,8 @@
+---
+extends: existence
+level: error
+link: https://github.com/riscv/docs-dev-guide
+message: "Do not use periods in all-uppercase abbreviations such as '%s'."
+nonword: true
+tokens:
+  - '\b(?:[A-Z]\.){3,5}'
