@@ -1,0 +1,15 @@
+---
+extends: substitution
+ignorecase: false
+level: warning
+link: https://github.com/riscv/docs-dev-guide
+message: "%s"
+swap:
+  # Start each error message with "Do not use ..."
+  # Error messages must be single quoted.
+  I: 'Do not use words such as "I" or "we", unless you are indeed speaking on behalf of all of RISC-V International.'
+  we: 'Do not use words such as "I" or "we", unless you are indeed speaking on behalf of all of RISC-V International.'
+  man: 'Do not use language that specifies a gender, such as "he" or "woman". Instead, use words such as "the author", "human" or "they".'
+  woman: 'Do not use language that specifies a gender, such as "he" or "woman". Instead, use words such as "the author", "human" or "they.'
+  he: 'Do not use language that specifies a gender, such as "he" or "woman". Instead, use words such as "the author", "human" or "they.'
+  she: 'Do not use language that specifies a gender, such as "he" or "woman". Instead, use words such as "the author", "human" or "they.'
