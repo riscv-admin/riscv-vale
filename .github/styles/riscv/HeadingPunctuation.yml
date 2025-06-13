@@ -1,0 +1,11 @@
+---
+extends: existence
+level: warning
+link: https://github.com/riscv/docs-dev-guide
+message: "Do not use end punctuation in headings."
+nonword: true
+scope: heading
+action:
+  name: remove
+tokens:
+  - '[.?!]$'
