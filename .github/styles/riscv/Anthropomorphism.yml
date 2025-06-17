@@ -1,16 +1,1 @@
-extends: existence
-message: "Avoid attributing human actions to non‑human entities (anthropomorphism)."
-level: warning
-ignorecase: true
-tokens:
-  - "explained"
-  - "believe"
-  - "decided"
-  - "noticed"
-  - "concluded"
-  - "thought"
-  - "understood"
-  - "recognized"
-  - "felt"
-  - "shows"
-  - "indicates"
+
