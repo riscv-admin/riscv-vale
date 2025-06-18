@@ -22,7 +22,7 @@ Follow these steps to add and enable Vale to your GitHub repository.
 1. Download the RISC-V Vale rules to your repository locally but no need to add them to Git.
     * open a terminal and change to the root of your extensions repository
     * run the command `vale sync`
-
+4. For realtime recommendations, add the Vale VSCode extension from the [marketplace](https://marketplace.visualstudio.com/items?itemName=chrischinchilla.vale-vscode). 
 
 
 
