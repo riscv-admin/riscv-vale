@@ -1,25 +1,28 @@
+---
 name: Vale Linting Reusable
-on: [workflow_call]
+
+on:
+  workflow_call:
 
 jobs:
   vale:
     name: runner / vale
     runs-on: ubuntu-latest
     steps:
-      # For AsciiDoc users:
-        - name: Install Asciidoctor
-          run: sudo apt-get install -y asciidoctor
-        - uses: actions/checkout@v4
-        - uses: errata-ai/vale-action@v2.1.1
-          with:
-            filter_mode: diff_context
-            vale_flags: "--no-exit --minAlertLevel=error --glob=*.adoc"
-            reporter: github-check
-            fail_on_error: true
-          env:
-            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-            REVIEWDOG_GITHUB_API_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Install Asciidoctor
+        run: sudo apt-get install -y asciidoctor
 
+      - uses: actions/checkout@v4
+
+      - uses: errata-ai/vale-action@v2.1.1
+        with:
+          filter_mode: diff_context
+          vale_flags: "--no-exit --minAlertLevel=error --glob=*.adoc"
+          reporter: github-check
+          fail_on_error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 # For reStructuredText users:
 #      - name: Install docutils
 #        run: sudo apt-get install -y docutils
