@@ -1,7 +1,14 @@
 pseudoinstruction
+[Cc]acheable
+[Cc]arryless
+[Hh]alfword
+[Ii]nstret
+[Mm]icrocontrollers?
+PMAs?
+[Pp]refetch
+S(?:ha|HA)
 Sdext
 Sdtrig
-Sha
 Shcounterenw
 Shgatpa
 Shtvala
